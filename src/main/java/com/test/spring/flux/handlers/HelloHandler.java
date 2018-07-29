@@ -22,4 +22,8 @@ public class HelloHandler {
     public Mono<ServerResponse> greetHello(ServerRequest serverRequest){
         return ServerResponse.ok().body(BodyInserters.fromObject("Hi there from spring flux"));
     }
+
+    public Mono<ServerResponse> greetHello1(ServerRequest serverRequest){
+        return ServerResponse.ok().body(BodyInserters.fromObject("Hi there from spring flux"));
+    }
 }
