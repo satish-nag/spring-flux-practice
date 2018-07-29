@@ -52,7 +52,10 @@
         </executions>-->
       </plugin>
     </plugins>
+<<<<<<< HEAD
 
+=======
+>>>>>>> e43d44560cedaee5d0db036d545e0cc644cc77e5
   </build>
   <repositories>
     <repository>
