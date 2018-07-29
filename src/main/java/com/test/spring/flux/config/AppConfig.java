@@ -16,6 +16,6 @@ public class AppConfig {
     public RouterFunction<ServerResponse> routerFunction(HelloHandler helloHandler){
         return RouterFunctions.route(RequestPredicates.GET("/hello")
                               .and(RequestPredicates.accept(MediaType.TEXT_PLAIN,MediaType.TEXT_HTML))
-                              ,helloHandler::sayHello);
+                              ,helloHandler::sayHello).andRoute(RequestPredicates.GET("/greet"),helloHandler::greet);
     }
 }
