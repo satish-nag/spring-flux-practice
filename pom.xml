@@ -36,7 +36,7 @@
     <connection>scm:git:ssh://github.com/satish-nag/spring-flux-practice.git</connection>
     <developerConnection>scm:git:ssh://github.com/satish-nag/spring-flux-practice.git</developerConnection>
     <url>https://github.com/apache/maven-scm/tree/${project.scm.tag}</url>
-    <tag>2018-08-08C</tag>
+    <tag>2018-08-08A</tag>
   </scm>
   <build>
     <plugins>
@@ -58,6 +58,7 @@
         <version>2.3.2</version>
         <executions>
           <execution>
+            <id>maven-release</id>
             <goals>
               <goal>prepare</goal>
               <goal>perform</goal>
@@ -65,8 +66,8 @@
             <phase>deploy</phase>
             <configuration>
               <tagBase>https://github.com/satish-nag/spring-flux-practice/tags</tagBase>
-              <releaseVersion>2018-08-08B</releaseVersion>
-              <tag>2018-08-08C</tag>
+              <!--<releaseVersion>2018-08-08A</releaseVersion>-->
+              <tag>2018-08-08A</tag>
               <developmentVersion>2.0-SNAPSHOT</developmentVersion>
               <scmCommentPrefix>satish-nag</scmCommentPrefix>
               <username>git</username>
@@ -86,6 +87,11 @@
       <name>localrepo</name>
       <url>file:/C:/local-repo</url>
     </repository>
+    <snapshotRepository>
+      <id>localSnapRepo</id>
+      <name>localsnaprepo</name>
+      <url>file:/C:/local-repo-snap</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <repositories>
