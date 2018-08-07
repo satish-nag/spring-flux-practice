@@ -82,6 +82,7 @@
           <scmCommentPrefix>satish-nag</scmCommentPrefix>
           <username>git</username>
           <updateBranchVersions>true</updateBranchVersions>
+          <pushChanges>true</pushChanges>
         </configuration>
       </plugin>
     </plugins>
