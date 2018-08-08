@@ -66,6 +66,7 @@
           <updateBranchVersions>true</updateBranchVersions>
           <updateWorkingCopyVersions>false</updateWorkingCopyVersions>
           <pushChanges>true</pushChanges>
+          <branchName>2018.08.01</branchName>
         </configuration>
       </plugin>
     </plugins>
