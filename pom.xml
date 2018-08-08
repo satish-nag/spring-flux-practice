@@ -5,7 +5,7 @@
 
   <groupId>com.test.spring.flux</groupId>
   <artifactId>spring-flux-practice</artifactId>
-  <version>2.0-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <name>spring-flux-practice</name>
   <url>http://www.example.com</url>
 
@@ -35,8 +35,7 @@
   <scm>
     <connection>scm:git:ssh://github.com/satish-nag/spring-flux-practice.git</connection>
     <developerConnection>scm:git:ssh://github.com/satish-nag/spring-flux-practice.git</developerConnection>
-    <url>https://github.com/apache/maven-scm/tree/${project.scm.tag}</url>
-    <tag>2018-08-08A</tag>
+    <url>https://github.com/satish-nag/spring-flux-practice</url>
   </scm>
   <build>
     <plugins>
@@ -56,12 +55,13 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
         <version>2.5.3</version>
-        <!--<executions>
+        <executions>
           <execution>
             <id>maven-release</id>
             <goals>
               <goal>prepare</goal>
               <goal>perform</goal>
+              <goal>branch</goal>
             </goals>
             <phase>deploy</phase>
             <configuration>
@@ -71,10 +71,16 @@
               <developmentVersion>2.0-SNAPSHOT</developmentVersion>
               <scmCommentPrefix>satish-nag</scmCommentPrefix>
               <username>git</username>
+              <updateWorkingCopyVersions>false</updateWorkingCopyVersions>
+              <pushChanges>true</pushChanges>
+              <branchName>2018.08.01</branchName>
             </configuration>
           </execution>
-        </executions>-->
+        </executions>
         <configuration>
+          <updateBranchVersions>true</updateBranchVersions>
+        </configuration>
+        <!--<configuration>
           <tagBase>https://github.com/satish-nag/spring-flux-practice/tags</tagBase>
           <releaseVersion>2018-08-08A</releaseVersion>
           <tag>2018-08-08A</tag>
@@ -82,8 +88,9 @@
           <scmCommentPrefix>satish-nag</scmCommentPrefix>
           <username>git</username>
           <updateBranchVersions>true</updateBranchVersions>
+          <updateWorkingCopyVersions>false</updateWorkingCopyVersions>
           <pushChanges>true</pushChanges>
-        </configuration>
+        </configuration>-->
       </plugin>
     </plugins>
   </build>
