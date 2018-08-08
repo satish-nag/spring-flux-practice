@@ -67,6 +67,7 @@
           <updateWorkingCopyVersions>false</updateWorkingCopyVersions>
           <pushChanges>true</pushChanges>
           <branchName>2018.08.01</branchName>
+          <developmentVersion>2.0-SNAPSHOT</developmentVersion>
         </configuration>
       </plugin>
     </plugins>
